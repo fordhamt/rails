@@ -1,0 +1,42 @@
+<% provide(:title, 'Add Player') %>
+<h1>Add Player</h1>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= form_for(@player) do |f| %>
+    <%= render 'shared/error_messages' %>
+
+      <%= f.label :rank %>
+      <%= f.text_field :rank, class: 'form-control'  %>
+     
+      <%= f.label :rating %>
+      <%= f.text_field :rating, class: 'form-control'  %>
+
+      <%= f.label :playername %>
+      <%= f.text_field :playername, class: 'form-control'  %>
+ 
+      <%= f.label :server %>
+      <%= f.text_field :server, class: 'form-control'  %>
+
+      <%= f.label :race %>
+      <%= f.text_field :race, class: 'form-control'  %>
+
+      <%= f.label :gender %>
+      <%= f.text_field :gender, class: 'form-control'  %>
+
+      <%= f.label :class_choice %>
+      <%= f.text_field :classchoice, class: 'form-control'  %>
+
+      <%= f.label :faction %>
+      <%= f.text_field :faction, class: 'form-control'  %>
+
+      <%= f.label :season_wins %>
+      <%= f.text_field :seasonwins, class: 'form-control'  %>
+       
+      <%= f.label :season_losses %>
+      <%= f.text_field :seasonlosses, class: 'form-control'  %>
+
+      <%= f.submit "Add Player", class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>

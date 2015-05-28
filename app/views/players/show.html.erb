@@ -1,0 +1,20 @@
+<% provide(:title, @player.playername) %>
+
+<div class="row">
+  <aside class="col-md-4">
+    <section class="user_info">
+      <h1>
+        <%= @player.playername %>
+      </h1>
+    </section>
+  </aside>
+<div class="col-md-8">
+	<% if @player.stats.any? %>
+      <h3>Stats </h3>
+      <ol class="players">
+        <%= render @stats  %>
+      </ol>
+      <% end %>
+  <%= link_to "Add Stats", new_player_stat_path(@player) %>
+</div>
+</div>
