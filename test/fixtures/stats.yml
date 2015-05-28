@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  level: MyString
+  guild: MyString
+  kills: MyString
+  battlegroup: MyString
+  points: MyString
+  player_id: 
+
+two:
+  level: MyString
+  guild: MyString
+  kills: MyString
+  battlegroup: MyString
+  points: MyString
+  player_id: 

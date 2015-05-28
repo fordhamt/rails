@@ -1,0 +1,26 @@
+<% provide(:title, 'Add Stats') %>
+<h1>Add Stats</h1>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= form_for([@player, @stat]) do |f| %>
+
+      <%= f.label :level %>
+      <%= f.text_field :level, class: 'form-control'  %>
+     
+      <%= f.label :guild %>
+      <%= f.text_field :guild, class: 'form-control'  %>
+
+      <%= f.label :kills %>
+      <%= f.text_field :kills, class: 'form-control'  %>
+ 
+      <%= f.label :battlegroup %>
+      <%= f.text_field :battlegroup, class: 'form-control'  %>
+
+      <%= f.label :points %>
+      <%= f.text_field :points, class: 'form-control'  %>
+
+      <%= f.submit "Add stats", class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>

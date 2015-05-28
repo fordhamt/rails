@@ -1,0 +1,12 @@
+<li>
+
+Level(<%= stat.level  %>) <br>
+Guild: <%= stat.guild %> <br>
+Battle Group: <%= stat.battlegroup %> <br>
+Honorable Kills: <%= stat.kills %> <br>
+Achievement Points: <%= stat.points %> 
+
+<br>
+<%= link_to "delete", stat, method: :delete,
+                                       data: { confirm: "You sure?" } %>
+</li>

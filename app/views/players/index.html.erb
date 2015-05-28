@@ -1,0 +1,16 @@
+<% provide(:title, 'Top Arena Players') %>
+<h1>Top Arena Players</h1>
+<table align="center" height="40" border="0">
+<tr height="20px" width="50px" align="center">
+<td>Rank</td> <td>Rating</td> <td>Name</td> <td>Server</td>
+<td>Race</td>  <td>Gender </td>
+<td>Class</td>  <td>Faction</td>  <td>Season Wins</td>  <td>Season Losses</td>
+</tr>
+</table>
+<%= will_paginate %>
+
+<ul class="players">
+  <%= render @players %>
+</ul>
+
+<%= will_paginate %>

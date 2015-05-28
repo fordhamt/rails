@@ -1,0 +1,12 @@
+<li>
+<table align="center"  border="1">
+<tr height="40px" width="50px" align="center">
+	<td><%= player.rank %></td> <td><%= player.rating %></td> <td><%= link_to player.playername, player %></td> <td> <%= player.server %></td>
+	<td><%= player.race %></td>  <td><%= player.gender %></td> 
+	<td><%= player.classchoice %></td>  <td><%= player.faction %></td>  <td><%= player.seasonwins %></td>  <td><%= player.seasonlosses %></td>
+ <%= link_to "edit", edit_polymorphic_path(player) %>
+| <%= link_to "delete", player, method: :delete,
+	data: { confirm: "You sure?" } %>
+<tr>
+</table>
+</li>
